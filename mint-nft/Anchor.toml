@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+mint_nft = "4C35BnHAedyLihLpuDqmnaA86f53uvjG6RmgZaEHWhtZ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "./tests/keypairs/buyer1.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
